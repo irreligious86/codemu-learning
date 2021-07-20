@@ -1,11 +1,16 @@
+import React from 'react';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
+  const li1 = <li>text1</li>;
+  const li2 = <li>text2</li>;
+  const li3 = <li>text3</li>;
 
-    </div>
-  );
+  return <ul>
+    {li1} <br/>
+    {li2} <br/>
+    {li3} <br/>
+  </ul>
 }
 
 export default App;
