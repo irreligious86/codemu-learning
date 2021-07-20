@@ -1,11 +1,14 @@
-import './App.css';
+// import './App.css';
 
 function App() {
+
+    const obj = {name: 'john', surname: 'smit'};
+
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-    </div>
+    <p className="App">
+    name: <span>{obj.name}</span>, <br/>
+        surname: <span>{obj.surname}</span>
+    </p>
   );
 }
 
