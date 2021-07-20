@@ -1,15 +1,15 @@
-// import './App.css';
+
+import React from 'react';
 
 function App() {
 
-    const obj = {name: 'john', surname: 'smit'};
-
-  return (
-    <p className="App">
-    name: <span>{obj.name}</span>, <br/>
-        surname: <span>{obj.surname}</span>
-    </p>
-  );
+    return <ul>
+        {arr.map((i, index) => (
+            <li key={index}>
+                {i}
+            </li>
+        ))}
+    </ul>;
 }
 
 export default App;
