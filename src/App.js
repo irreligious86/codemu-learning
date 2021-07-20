@@ -1,6 +1,12 @@
-
 import React from 'react';
 
-function App() {}
+function App() {
+
+    return (
+
+        <p>hello!</p>
+
+    )
+}
 
 export default App;
