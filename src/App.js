@@ -8,7 +8,7 @@ function App() {
     <p className="App">
     name: <span>{obj.name}</span>, <br/>
         surname: <span>{obj.surname}</span>
-    </p>
+    </p> 
   );
 }
 
