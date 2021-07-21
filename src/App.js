@@ -13,7 +13,11 @@ function App() {
             <p>{name} <button onClick={()=>{setName('George')}}>Set name</button> </p>
             <p>{surname} <button onClick={()=>{setSurname('Black')}}>Set surname</button> </p>
             <p>{age} <button onClick={()=>{setAge(48)}}>Set age</button> </p>
-            <p>{ allowed ? 'Allowed' : 'Forbidden' } <button onClick={()=>{setAllowed(!allowed)}}>Allow</button> </p>
+            <p>{ allowed ? 'Allowed' : 'Forbidden' }
+
+                { allowed ? <button onClick={ () => {setAllowed(false)}}>Forbidden</button> : <button onClick={ () => {setAllowed(true)}}>Allow</button> }
+
+            </p>
         </>
     )
 }
