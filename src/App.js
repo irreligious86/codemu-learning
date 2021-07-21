@@ -2,10 +2,16 @@ import React from 'react';
 
 function App() {
 
+    function getDigitsSum(num) {
+        return (String(num).split('')).reduce((sum, current) => {
+            return sum + +current;
+        }, 0)
+    }
+
     return (
-
-        <p>hello!</p>
-
+        <span>
+            {getDigitsSum(123)}
+        </span>
     )
 }
 
