@@ -9,9 +9,9 @@ function App() {
 
     return (
         <>
-            <p>{name}</p>
-            <p>{surname}</p>
-            <p>{age}</p>
+            <p>{name} <button onClick={()=>{setName('George')}}>Set name</button> </p>
+            <p>{surname} <button onClick={()=>{setSurname('Black')}}>Set surname</button> </p>
+            <p>{age} <button onClick={()=>{setAge(48)}}>Set age</button> </p>
 
         </>
     )
