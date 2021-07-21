@@ -3,10 +3,13 @@ import './App.css';
 
 function App() {
 
+    const [value, setValue] = useState(0);
+
     return (
-
-        <p>hello!</p>
-
+        <>
+            <input value={value} onChange={event => {setValue(event.target.value)}} />
+            <p><i><b>Birth year:</b></i> {(new Date()).getFullYear() - value}</p>
+        </>
     )
 }
 
