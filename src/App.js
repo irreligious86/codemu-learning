@@ -11,6 +11,11 @@ function App() {
 
     function addItem() {
         setNotes([...notes, value]);
+        clearThis();
+    }
+
+    function clearThis(target){
+        setValue("")
     }
 
     function changeInput(event) {
