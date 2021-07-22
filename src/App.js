@@ -13,15 +13,15 @@ function App() {
     const list = langs.map((item, index) => {
         return (
             <>
-            <input
-                type="radio"
-                name="radio"
-                value={langs[index]}
-                key={index}
-                id={item.value}
-                checked={value === item.toString() ? true : false}
-                onChange={changeHandler}
-            />
+                <input
+                    type="radio"
+                    name="radio"
+                    value={langs[index]}
+                    key={index}
+                    id={item.value}
+                    checked={value === item.toString() ? true : false}
+                    onChange={changeHandler}
+                />
                 <label htmlFor={item.value}>{langs[index]}</label> <br/>
             </>
         )
@@ -30,7 +30,7 @@ function App() {
     return (
         <>
             {list}
-            <p><i><b>Your choice: </b></i> {value} {value === 'JS' &&  <i>Super!!!!</i>}</p>
+            <p><i><b>Your choice: </b></i> {value} {value === 'JS' && <i>Super!!!!</i>}</p>
         </>
     )
 }
